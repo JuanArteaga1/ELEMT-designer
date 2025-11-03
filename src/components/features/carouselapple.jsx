@@ -2,9 +2,9 @@
 
 import React from "react";
 import { Carousel, Card } from "../ui/apple-cards-carousel";
-import casa from '../../assets/CFLZ.JPG';
-import boda from '../../assets/boda.png';
-import mesa from '../../assets/mesa.png';
+import casa from "../../assets/CFLZ.JPG";
+import boda from "../../assets/boda.png";
+import mesa from "../../assets/mesa.png";
 
 export function AppleCardsCarouselDemo() {
     const cards = data.map((card, index) => (
