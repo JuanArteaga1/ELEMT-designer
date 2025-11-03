@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '../../assets/NEGATIVA.png';
+import logo from '/NEGATIVA.png';
 import { useNavigate } from "react-router-dom";
 
 // src/main.jsx o src/App.jsx

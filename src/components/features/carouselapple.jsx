@@ -2,30 +2,6 @@
 
 import React from "react";
 import { Carousel, Card } from "../ui/apple-cards-carousel";
-import casa from "../../assets/CFLZ.JPG";
-import boda from "../../assets/boda.png";
-import mesa from "../../assets/mesa.png";
-
-export function AppleCardsCarouselDemo() {
-    const cards = data.map((card, index) => (
-        <Card key={card.src} card={card} index={index} />
-    ));
-
-    return (
-        <div className="w-full h-full py-8 sm:py-12 lg:py-20">
-            <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-                <h1 className="font-Montserrat-semi-bold text-3xl sm:text-4xl lg:text-5xl text-center px-4 mb-4" style={{ color: '#4a7c59' }}>
-                    Proyectos
-                </h1>
-                <div className="w-24 h-1 bg-[#4a7c59] mx-auto rounded-full"></div>
-                <p className="text-[#4a7c59] text-sm sm:text-base lg:text-lg mt-6 px-4 max-w-2xl mx-auto opacity-80">
-                    Descubre nuestra galería de proyectos arquitectónicos que reflejan excelencia, innovación y distinción
-                </p>
-            </div>
-            <Carousel items={cards} />
-        </div>
-    );
-}
 
 const DummyContent = () => {
     return (
@@ -62,20 +38,41 @@ const data = [
     {
         category: "Espacio Confortable",
         title: "Elegancia, amplitud y calidez en un entorno diseñado para disfrutar cada momento.",
-        src: casa,
+        src: "/casa.jpg",
         content: <DummyContent />,
     },
     {
         category: "Asesoría Integral de Eventos",
         title: "Cuidamos cada detalle para que tu celebración sea perfecta y sin preocupaciones.",
-        src: boda,
+        src: "/boda.png",
         content: <DummyContent />,
     },
     {
         category: "Gastronomía Gourmet",
         title: "Sabores exclusivos y presentaciones impecables que conquistan todos los sentidos.",
-        src: mesa,
+        src: "/mesa.png",
         content: <DummyContent />,
     },
     
 ];
+  
+export function AppleCardsCarouselDemo() {
+    const cards = data.map((card, index) => (
+        <Card key={card.src} card={card} index={index} />
+    ));
+
+    return (
+        <div className="w-full h-full py-8 sm:py-12 lg:py-20">
+            <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+                <h1 className="font-Montserrat-semi-bold text-3xl sm:text-4xl lg:text-5xl text-center px-4 mb-4" style={{ color: '#4a7c59' }}>
+                    Proyectos
+                </h1>
+                <div className="w-24 h-1 bg-[#4a7c59] mx-auto rounded-full"></div>
+                <p className="text-[#4a7c59] text-sm sm:text-base lg:text-lg mt-6 px-4 max-w-2xl mx-auto opacity-80">
+                    Descubre nuestra galería de proyectos arquitectónicos que reflejan excelencia, innovación y distinción
+                </p>
+            </div>
+            <Carousel items={cards} />
+        </div>
+    );
+}

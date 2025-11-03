@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/NEGATIVA.png';
+import logo from '/NEGATIVA.png';
 
 import { Facebook, Instagram, MessageCircle, Linkedin } from 'lucide-react';
 

@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/ui/navbar";
-import videoPortada from "./assets/VIDEOPORTADA.mp4";
-import imagen from "./assets/casa.jpg";
+import videoPortada from "/VIDEOPORTADA.mp4";
+import imagen from "/casa.jpg";
 import {AppleCardsCarouselDemo} from "./components/features/carouselapple";
 import Footer from "./components/ui/footer";
-import logo from './assets/LOGOCASA.png';
+
 
 // Hook personalizado para detectar scroll optimizado
 const useScrollPosition = () => {
@@ -137,7 +137,7 @@ function App() {
           }}
         >
           <div id="nosotros" className="w-full max-w-lg mx-auto mb-8">
-            <img src={logo} alt="Logo" className="h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 w-auto mx-auto" />       
+            <img src={"/LOGOCASA.png"} alt="Logo" className="h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 w-auto mx-auto" />       
           </div>
           <div className="w-full max-w-4xl mx-auto">
             <h1 className="font-Montserrat-semi-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center px-4 leading-tight" style={{ color: '#1c1c1c' }}>
